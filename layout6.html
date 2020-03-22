@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="en">
     
@@ -6,13 +6,56 @@
     <meta charset="utf-8" />
     <title>Layout 3</title>
         <style>
-            div 
+                div {
+                outline: 1px solid black;
+                }
+            #container {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                margin: auto;
+                max-width: 800px;
+                }
+             .blue {
+                background-color: blue;
+                height: 200px;
+                }
+            #green {
+                background-color: lime;
+                grid-column: 1/5;
+                height: 200px;
+                }
+            #red {
+                background-color: red;
+                grid-column: 1/5;
+                height: 400px;
+                }
+            .yellow {
+                background-color: yellow;
+                width: 20%;
+                height: 120px;
+                grid-template-columns: repeat(2, 1fr);
+                align-items: start;
+                margin: 20px;
+                } 
+            .yellow2 {
+                background-color: yellow;
+                
+                margin: 20px;
+                } 
    
         </style>
     </head>
     
     <body>
-        
+        <div id="container">
+            <div class="blue"></div>
+            <div class="blue"></div>
+            <div id="green"></div>
+            <div id="red">
+            <div class="yellow"></div>
+            <div class="yellow"></div></div>
+            
+        </div>
     </body>
     
 </html>
