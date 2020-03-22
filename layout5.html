@@ -1,1 +1,75 @@
+<!DOCTYPE html>
 
+<html lang="en">
+    
+<head>
+    <meta charset="utf-8" />
+    <title>Layout 5</title>
+        <style>
+            div {
+                outline: 1px solid black;
+                }
+           #container {
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+                margin: auto;
+                max-width: 800px;
+                }
+            #blue {
+                display: grid;
+                background-color: blue;
+                grid-column: 1/4;
+                grid-template-columns: auto;
+                height: 200px;
+                }
+            .red {
+                display: grid;
+                background-color: red;
+                height: 400px;
+                }
+            #green {
+                background-color: lime;
+                grid-column: 1/4;
+                height: 200px;
+                }
+            .yellow {
+                background-color: yellow;
+                width: 20%;
+                margin: 20px;
+                justify-self: end;
+                }
+            .yellow2 {
+                background-color: yellow;
+                width: 60%;
+                
+                margin: 20px;
+                justify-self: end;
+                }
+            .yellow3 {
+                background-color: yellow;
+                width: 20%;
+                margin: 20px;
+                justify-self: start;
+                }
+        </style>
+    </head>
+    
+    <body>
+        <div id="container">
+        <div id="blue">
+            <div class="yellow"></div>
+        </div>
+        <div class="red"></div>
+        <div class="red">
+            <div class="yellow3"></div>
+            <div class="yellow2"></div>
+        </div>
+        <div id="green"></div>
+            
+        </div> 
+    </body>
+    
+</html>
+        
+        
+        
